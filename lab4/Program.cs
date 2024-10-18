@@ -16,6 +16,10 @@ namespace lab4
         static void Main(string[] args)
         {
             double a = 1, b = -3, c = 2;
+            //double a = 1, b = -2, c = 1;
+            //double a = 1, b = 2, c = 5;
+
+
             double root1, root2;
 
             int result = Foo(a, b, c, out root1, out root2);
