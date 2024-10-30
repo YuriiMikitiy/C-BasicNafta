@@ -35,8 +35,14 @@ namespace Lab6
             MyEvent += Method2;
             MyEvent += Method3;
 
-            // Активація події
-            Console.WriteLine("Активація події MyEvent:");
+            // Активація події 1
+            Console.WriteLine("Активація події MyEvent 1:");
+            MyEvent?.Invoke(); // Перевірка на null перед викликом події
+
+            MyEvent -= Method3;
+
+            // Активація події 2
+            Console.WriteLine("\nАктивація події MyEvent 2:");
             MyEvent?.Invoke(); // Перевірка на null перед викликом події
         }
     }
